@@ -12,10 +12,9 @@ import javax.persistence.Id;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
-
+    private Integer userid;
     private String name;
-
     private String email;
-
+    private boolean active;
+    private String city;
 }

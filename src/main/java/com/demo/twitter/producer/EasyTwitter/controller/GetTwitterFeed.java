@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import twitter4j.QueryResult;
 import twitter4j.TwitterException;
-
+import twitter4j.api.DirectMessagesResources;
 
 @Slf4j
 @RestController
@@ -25,4 +25,12 @@ public class GetTwitterFeed {
         TwitterBO twitterBO = new TwitterBO();
         return twitterBO.getFeedForKey(searchKey);
     }
+
+    @GetMapping(value = "/message", produces = MediaType.APPLICATION_JSON_VALUE)
+    public DirectMessagesResources getMessage() throws TwitterException, JsonProcessingException {
+        TwitterBO twitterBO = new TwitterBO();
+        return twitterBO.getDirectMessage();
+    }
+
+
 }
