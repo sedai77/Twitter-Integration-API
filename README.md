@@ -1,8 +1,11 @@
 # Getting Started
 
 ### What does this do?
-This API provides an easy way to integrate with Twitter. 
+This API provides an easy way to integrate with Twitter API.
+Currently there is only integration build to search twitter with a keyword and Getting direct messages.
 It can be used as a independent project or can be integrated with other projects.
+
+It also has integration with MYSQL database to get user details. 
 
 ### Guides
 The following guides illustrate how to use some features concretely:
